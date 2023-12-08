@@ -15,6 +15,12 @@ Antes de executar o pipeline, certifique-se de ter as seguintes bibliotecas inst
 * nltk: https://www.nltk.org/howto/portuguese_en.html
 * demoji: https://pypi.org/project/demoji/
 * Enelvo: https://github.com/thalesbertaglia/enelvo
+
+  <code>!pip install demoji
+import demoji
+
+!pip install enelvo
+from enelvo import normaliser</code>
   
 <hr>
 
