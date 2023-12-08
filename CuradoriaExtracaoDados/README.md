@@ -16,9 +16,8 @@ Antes de executar o pipeline, certifique-se de ter as seguintes bibliotecas inst
 * demoji: https://pypi.org/project/demoji/
 * Enelvo: https://github.com/thalesbertaglia/enelvo
 
-  <code>!pip install demoji
+<code>!pip install demoji
 import demoji
-
 !pip install enelvo
 from enelvo import normaliser</code>
   
