@@ -89,7 +89,7 @@ texto = texto.str.replace(r'chavevirg', ',')
 Este passo envolve a remoção de pontuações e caracteres especiais do texto, exceto quando esses caracteres são parte de hashtags, datas ou números com vírgulas. Isso é feito usando uma expressão regular que mantém esses padrões específicos.
 
 ```
-texto = texto.apply(lambda x: re.sub(r'[^\w\#\/\s\,]|(?<!\d),(?=\d)|(?<!\d)\/|\/(?!\d)|_', '', x))
+texto = texto.apply(lambda x: re.sub(r'(?<!\d),(?=\D)|(?<=\D),(?!\d)|(?<!\d),(?=\d)|(?<!\d)\/|\/(?!\d)|_|[^\w#\/\s,]', '', x))
 ```
 
 # Etapas Opcionais
