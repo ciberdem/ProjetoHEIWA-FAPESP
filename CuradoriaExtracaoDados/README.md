@@ -30,10 +30,10 @@ from enelvo import normaliser
 O pré-processamento de texto desempenha um papel crucial na qualidade e na consistência dos dados. No pipeline fornecido, várias etapas são realizadas para garantir que o texto de entrada seja limpo e adequado para análises subsequentes. Abaixo estão os detalhes das principais etapas de pré-processamento de texto:
 
 ## 1. Substituição de Vírgulas
-Nesta etapa, todas as vírgulas no texto são temporariamente substituídas por "chavev". Isso é feito para contornar a ferramenta Enelvo, que separa números com vírgula durante a normalização. A substituição temporária facilita a manutenção da integridade dos dados numéricos e é revertida posteriormente.
+Nesta etapa, todas as vírgulas no texto são temporariamente substituídas por "chavevirg". Isso é feito para contornar a ferramenta Enelvo, que separa números com vírgula durante a normalização. A substituição temporária facilita a manutenção da integridade dos dados numéricos e é revertida posteriormente.
 
 ```
-texto = texto.str.replace(r',', 'chavev')
+texto = texto.str.replace(r',', 'chavevirg')
 ```
 
 ## 2. Normalização Enelvo
@@ -44,9 +44,9 @@ texto = texto.apply(lambda x: normalizador.normalise(x))
 ```
 
 ### Exemplo:
-*Entrada*: ['testeee', 'ururguau', 'disculpa qq coisa!', "Vc eh muitooooo legal", "Oii, To trabahlando hj"]
+**Entrada**: ['testeee', 'ururguau', 'disculpa qq coisa!', "Vc eh muitooooo legal", "Oii, To trabahlando hj"]
 
-*Saídas*: ['teste', 'uruguai', 'desculpa qualquer coisa', 'você é muito legal', 'oii to trabalhando hoje']
+**Saídas**: ['teste', 'uruguai', 'desculpa qualquer coisa', 'você é muito legal', 'oii to trabalhando hoje']
 
 ## 3. Substituição de Emojis
 Neste passo, o código realiza a substituição de emojis por rótulos específicos. Uma lista de emojis e seus rótulos correspondentes é definida no emoji_list. Emojis encontrados no texto são substituídos por esses rótulos para uniformizar a representação de emojis. Também utilizamos a biblioteca demoji para substituir emojis por rótulos. 
@@ -56,9 +56,9 @@ texto = texto.apply(substitui_emoji)
 ```
 
 ### Exemplo:
-*Entrada*: ['😀', '😋', ':)', ':(', '🤢', "😺", "🎂"]
+**Entrada**: ['😀', '😋', ':)', ':(', '🤢', "😺", "🎂"]
 
-*Saídas*: ['grinningface', 'facesavoringfood', 'emojipositivo', 'emojinegativo', 'nauseatedface', 'grinningcat', 'birthdaycake']
+**Saídas**: ['grinningface', 'facesavoringfood', 'emojipositivo', 'emojinegativo', 'nauseatedface', 'grinningcat', 'birthdaycake']
 
 
 ## 4. Substituição de Usuários
@@ -79,10 +79,10 @@ texto = texto.str.replace(r'https?://\S+', '')
 ```
 
 ## 6. Reversão da Substituição de Vírgulas
-Após a remoção de URLs, o código reverterá a substituição anterior de vírgulas por 'chavev', restaurando-as ao seu estado original.
+Após a remoção de URLs, o código reverterá a substituição anterior de vírgulas por 'chavevirg', restaurando-as ao seu estado original.
 
 ```
-texto = texto.str.replace(r'chavev', ',')
+texto = texto.str.replace(r'chavevirg', ',')
 ```
 
 ## 7. Remoção de Pontuações e Caracteres Especiais
@@ -117,4 +117,10 @@ texto = texto.apply(lambda x: regexp_tokenize(x, pattern))
 ```
 
 <hr>
+
+# Testes
+
+Nesta seção, apresentamos o processamento aplicado em um arquivo teste:
+
+<img src="https://github.com/ciberdem/ProjetoHEIWA-FAPESP/blob/main/src/Teste_preprocess.png" alt="Exemplo de saída de execução do código">
 
