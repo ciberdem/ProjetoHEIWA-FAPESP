@@ -45,6 +45,7 @@ texto = texto.apply(lambda x: normalizador.normalise(x))
 
 ### Exemplo:
 *Entrada*: ['testeee', 'ururguau', 'disculpa qq coisa!', "Vc eh muitooooo legal", "Oii, To trabahlando hj"]
+
 *Saídas*: ['teste', 'uruguai', 'desculpa qualquer coisa', 'você é muito legal', 'oii to trabalhando hoje']
 
 ## 3. Substituição de Emojis
@@ -56,6 +57,7 @@ texto = texto.apply(substitui_emoji)
 
 ### Exemplo:
 *Entrada*: ['😀', '😋', ':)', ':(', '🤢', "😺", "🎂"]
+
 *Saídas*: ['grinningface', 'facesavoringfood', 'emojipositivo', 'emojinegativo', 'nauseatedface', 'grinningcat', 'birthdaycake']
 
 
