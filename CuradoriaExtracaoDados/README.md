@@ -1,6 +1,6 @@
 <h1>Pipeline de Limpeza de Dados</h1>
 
-Este repositório contém um pipeline de limpeza de dados em Python, desenvolvido para pré-processar conjuntos de dados textuais. O pipeline foi desenvolvido para limpeza de dados advindos de redes sociais. Entretanto, ele pode ser utilizado para várias basea de dados textuais. O pipeline utiliza diversas bibliotecas, ferramentas e técnicas para garantir a qualidade e a consistência dos dados. Abaixo estão detalhadas as etapas e as funcionalidades principais do pipeline.
+Este repositório contém um pipeline de limpeza de dados em Python, desenvolvido para pré-processar conjuntos de dados textuais. O pipeline foi desenvolvido para limpeza de dados advindos de redes sociais. Entretanto, ele pode ser utilizado para várias bases de dados textuais. O pipeline utiliza diversas bibliotecas, ferramentas e técnicas para garantir a qualidade e a consistência dos dados. Abaixo estão detalhadas as etapas e as funcionalidades principais do pipeline.
 
 
 <img src="https://github.com/ciberdem/ProjetoHEIWA-FAPESP/blob/main/src/PipelineD.png" alt="Diagrama do pipeline de limpeza">
