@@ -3,7 +3,7 @@
 Este repositório contém um pipeline de limpeza de dados em Python, desenvolvido para pré-processar conjuntos de dados textuais. O pipeline foi desenvolvido para limpeza de dados advindos de redes sociais. Entretanto, ele pode ser utilizado para várias bases de dados textuais. O pipeline utiliza diversas bibliotecas, ferramentas e técnicas para garantir a qualidade e a consistência dos dados. Abaixo estão detalhadas as etapas e as funcionalidades principais do pipeline.
 
 
-<img src="https://github.com/ciberdem/ProjetoHEIWA-FAPESP/blob/main/src/PipelineD.png" alt="Diagrama do pipeline de limpeza">
+<img src="https://github.com/ciberdem/ProjetoHEIWA-FAPESP/blob/main/CuradoriaExtracaoDados/src/PipelineD.png" alt="Diagrama do pipeline de limpeza">
 
 
 **Conteúdo**
@@ -126,5 +126,5 @@ texto = texto.apply(lambda x: regexp_tokenize(x, pattern))
 
 Nesta seção, apresentamos o processamento aplicado em um arquivo teste:
 
-<img src="https://github.com/ciberdem/ProjetoHEIWA-FAPESP/blob/main/src/Teste_preprocess.png" alt="Exemplo de saída de execução do código">
+<img src="https://github.com/ciberdem/ProjetoHEIWA-FAPESP/blob/main/CuradoriaExtracaoDados/src/Teste_preprocess.png" alt="Exemplo de saída de execução do código">
 
