@@ -128,3 +128,4 @@ Nesta seção, apresentamos o processamento aplicado em um arquivo teste:
 
 <img src="https://github.com/ciberdem/ProjetoHEIWA-FAPESP/blob/main/CuradoriaExtracaoDados/src/Teste_preprocess.png" alt="Exemplo de saída de execução do código">
 
+<img src="https://github.com/ciberdem/ProjetoHEIWA-FAPESP/blob/main/CuradoriaExtracaoDados/src/exemplo_pipeline.png" alt="Exemplo de saída de execução do código">
