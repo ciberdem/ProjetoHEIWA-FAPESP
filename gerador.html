@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerador de Dados Fictícios</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="/script/script.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+</head>
+<body>
+    <div class="input-group">
+        <p id="numAtores-label">Número de atores</p>
+        <input type="number" id="numAtores" placeholder="Quantidade de atores...">
+    </div>
+    <br>
+    <div class="input-group">
+        <p id="numFalas-label" style="display: none;">Número de falas</p>
+        <input type="number" id="numFalas" placeholder="Quantidade de falas..." style="display: none;">
+    </div>
+    <br>
+    <div class="input-group">
+        <p id="numLinks-label" style="display: none;">Número de links</p>
+        <input type="number" id="numLinks" placeholder="Quantidade de links..." style="display: none;">
+    </div>
+    <br>
+    <button id="botaoSequencial" style="display: none;">Gerar dados</button>
+    <br>
+    <br>
+    <button id="botaoGerarArquivos" style="display: none;">Gerar Arquivos JSON</button>
+    <br>
+    <br>
+    <button id="botaoGerarGrafico" style="display: none;">Executar Visualização</button>
+    <button id="botaoReiniciar" style="display: none;">Reiniciar</button>
+
+    <svg width="960" height="600"></svg>
+
+    <!-- As tags script foram movidas para o final do documento -->
+    <script src="/script/botoesSequenciais.js"></script>
+</body>
+</html>
+
+
