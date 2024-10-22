@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pipeline_de_limpeza"
+version = "0.2.0"
+description = "Pipeline de pré-processamento para dados textuais em português"
+authors = [
+    {name = "Livia Alabarse"}
+]
+license = {text = "MIT"}
+dependencies = [
+    "pandas==2.0.3",
+    "demoji==1.1.0",
+    "enelvo==0.1.1",
+    "unidecode==1.3.6"
+]
+
+[project.urls]
+homepage = "https://github.com/ciberdem/ProjetoHEIWA-FAPESP/tree/main/CuradoriaExtracaoDados/pipeline_v2"
