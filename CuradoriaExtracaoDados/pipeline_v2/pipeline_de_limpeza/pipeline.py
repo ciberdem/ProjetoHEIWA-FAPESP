@@ -35,7 +35,6 @@ def preprocess(texto, normalizar=True, substituir_emojis=True, substituir_users=
 
     Parâmetros:
     texto (pd.Series): Uma série pandas contendo os textos a serem processados.
-    substituir_virgulas (bool): Substitui vírgulas temporariamente para evitar confusão com números. Padrão: True.
     normalizar (bool): Normaliza o texto usando o enelvo. Padrão: True.
     substituir_emojis (bool): Substitui emojis por rótulos de sentimentos. Padrão: True.
     substituir_users (bool): Remove menções a usuários no formato @usuario. Padrão: True.
