@@ -47,11 +47,14 @@ pip install -r /path/to/requirements.txt
 ### Exemplo de Uso
 
 ```python
-from pipeline import pipeline
+from pipeline_de_limpeza import pipeline
 
-# Aplicando o pipeline em um arquivo CSV, processando a 
-# coluna 'texto' com saída no formato json
-pipeline('dados.csv', 'texto', formato='json')
+caminho_arquivo = 'dados.csv'  # ou 'dados.json'
+coluna = 'texto'
+formato = 'json'
+
+# Executando o pipeline
+pipeline(caminho_arquivo, coluna, formato)
 ```
 
 
