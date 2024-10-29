@@ -368,4 +368,6 @@ texto = texto.apply(lambda x: re.sub(r'(?<!\d),(?=\D)|(?<=\D),(?!\d)|(?<!\d),(?=
 
 # Testes
 
+[![Watch the video](https://cdn.discordapp.com/attachments/1282017271740498007/1300616717931909131/4g1dVG2.png?ex=67217d35&is=67202bb5&hm=228500f8299f15d1ea1bd8dc8cd5ba2544e16649ee939cf6d81363f8a6af21a1&)](https://youtu.be/Y720j-TvAI0)
+
 <img src="https://github.com/ciberdem/ProjetoHEIWA-FAPESP/blob/main/CuradoriaExtracaoDados/pipeline_v2/assets/ex_teste_plv2.png" alt="Exemplo de saída de execução do código">
